@@ -282,7 +282,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10807576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -0.7909999, z: 0.008}
+  m_LocalPosition: {x: 0.468, y: -0.7909999, z: 0.008}
   m_LocalScale: {x: 2, y: 8, z: 2}
   m_Children: []
   m_Father: {fileID: 1108935758}
@@ -1943,7 +1943,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.4156847, y: 0.57201946, z: -0.4156847, w: 0.57201946}
-  m_LocalPosition: {x: -4.76, y: 2.59, z: 1.92}
+  m_LocalPosition: {x: -4.76, y: 5.72, z: 1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4157,6 +4157,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 633873630}
+  - {fileID: 1917947673}
   m_Father: {fileID: 1691462281}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4279,6 +4280,7 @@ GameObject:
   - component: {fileID: 676190803}
   - component: {fileID: 676190802}
   - component: {fileID: 676190801}
+  - component: {fileID: 676190804}
   m_Layer: 0
   m_Name: LeftControllerScriptAlias
   m_TagString: Untagged
@@ -4416,6 +4418,34 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
+--- !u!114 &676190804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 676190799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec6736498a33bb40a7b0d79fc8cdd2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1917947669}
+  quickSelect: 2
+  triggerButtonEvents: 1
+  gripButtonEvents: 1
+  touchpadButtonEvents: 1
+  buttonOneButtonEvents: 1
+  buttonTwoButtonEvents: 1
+  startMenuButtonEvents: 1
+  triggerAxisEvents: 1
+  gripAxisEvents: 1
+  touchpadAxisEvents: 1
+  touchpadTwoAxisEvents: 1
+  triggerSenseAxisEvents: 1
+  touchpadSenseAxisEvents: 1
+  middleFingerSenseAxisEvents: 1
+  ringFingerSenseAxisEvents: 1
+  pinkyFingerSenseAxisEvents: 1
 --- !u!1 &681825151
 GameObject:
   m_ObjectHideFlags: 0
@@ -8650,7 +8680,7 @@ Transform:
   m_LocalScale: {x: 28.458168, y: 0.08002579, z: 28.458168}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1238594950
 MeshCollider:
@@ -11306,7 +11336,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541697135}
   m_LocalRotation: {x: -0, y: 0.17195235, z: -0, w: 0.98510534}
-  m_LocalPosition: {x: 0.613, y: -1.36, z: 0.054}
+  m_LocalPosition: {x: 0.429, y: -1.36, z: 0.087}
   m_LocalScale: {x: 0.9332105, y: 1.1232884, z: 1}
   m_Children: []
   m_Father: {fileID: 1108935758}
@@ -14539,7 +14569,7 @@ GameObject:
   - component: {fileID: 1917947671}
   - component: {fileID: 1917947670}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14605,13 +14635,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917947669}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.4023275, y: 2.14, z: -0.24787712}
-  m_LocalScale: {x: 0.027651735, y: 1.0320997, z: 1.8732334}
+  m_LocalRotation: {x: -0.10768943, y: -0.6988583, z: 0.10768943, w: 0.6988583}
+  m_LocalPosition: {x: -0.005, y: 0.25, z: 0.01}
+  m_LocalScale: {x: 0.010494112, y: 0.35, z: 0.58}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 664827803}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 17.52}
 --- !u!1 &1927421993
 GameObject:
   m_ObjectHideFlags: 0
@@ -15749,7 +15779,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034501521}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.205999, y: 3.2870007, z: 9.278}
+  m_LocalPosition: {x: 13.205999, y: 3.344, z: 9.513}
   m_LocalScale: {x: 2, y: 8, z: 2}
   m_Children: []
   m_Father: {fileID: 1108935758}
