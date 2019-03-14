@@ -5,14 +5,16 @@
     public class InfoBubbles : MonoBehaviour
     {
       public VRTK_InteractableObject linkedObject;
-      public GameObject blurb;
+      public GameObject title;
+      public GameObject description;
 
       protected Transform spinner;
       protected bool spinning;
 
       protected virtual void OnEnable()
       {
-          blurb.SetActive(false);
+          description.SetActive(false);
+          title.SetActive(false);
           spinning = false;
           linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
 
@@ -38,7 +40,8 @@
       {
           if (spinning)
           {
-              blurb.SetActive(true);
+              description.SetActive(true);
+              title.SetActive(true);
           }
       }
 
@@ -49,7 +52,8 @@
 
       protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
       {
-          blurb.SetActive(false);
+          description.SetActive(false);
+          title.SetActive(false);
           spinning = false;
       }
   }
