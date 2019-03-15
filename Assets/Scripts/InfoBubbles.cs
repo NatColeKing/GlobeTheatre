@@ -7,12 +7,14 @@
       public VRTK_InteractableObject linkedObject;
       public GameObject title;
       public GameObject description;
+      public Transform player;
 
       protected Transform spinner;
       protected bool spinning;
 
       protected virtual void OnEnable()
       {
+          player = GameObject.Find("Player").transform;
           description.SetActive(false);
           title.SetActive(false);
           spinning = false;
@@ -38,6 +40,7 @@
 
       protected virtual void Update()
       {
+          transform.LookAt(player);
           if (spinning)
           {
               description.SetActive(true);
