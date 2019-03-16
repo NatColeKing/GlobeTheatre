@@ -7,17 +7,17 @@
       public VRTK_InteractableObject linkedObject;
       public GameObject title;
       public GameObject description;
-      public Transform player;
+      // public Transform player;
 
-      protected Transform spinner;
-      protected bool spinning;
+      protected Transform obj;
+      protected bool on;
 
       protected virtual void OnEnable()
       {
-          player = GameObject.Find("Player").transform;
+          // player = GameObject.Find("Player").transform;
           description.SetActive(false);
           title.SetActive(false);
-          spinning = false;
+          on = false;
           linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
 
           if (linkedObject != null)
@@ -26,7 +26,7 @@
               linkedObject.InteractableObjectUnused += InteractableObjectUnused;
           }
 
-          spinner = transform.Find("Capsule");
+          obj = transform.Find("Capsule");
       }
 
       protected virtual void OnDisable()
@@ -40,8 +40,8 @@
 
       protected virtual void Update()
       {
-          transform.LookAt(player);
-          if (spinning)
+          // transform.LookAt(player);
+          if (on)
           {
               description.SetActive(true);
               title.SetActive(true);
@@ -50,14 +50,14 @@
 
       protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
       {
-          spinning = true;
+          on = true;
       }
 
       protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
       {
           description.SetActive(false);
           title.SetActive(false);
-          spinning = false;
+          on = false;
       }
   }
 }
