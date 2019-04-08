@@ -6,6 +6,7 @@
     {
       public VRTK_InteractableObject linkedObject;
       public GameObject title;
+      public GameObject parchment;
       public GameObject description;
       // public Transform player;
 
@@ -17,6 +18,7 @@
           // player = GameObject.Find("Player").transform;
           description.SetActive(false);
           title.SetActive(false);
+          parchment.SetActive(false);
           on = false;
           linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
 
@@ -45,6 +47,7 @@
           {
               description.SetActive(true);
               title.SetActive(true);
+              parchment.SetActive(true);
           }
       }
 
@@ -57,6 +60,7 @@
       {
           description.SetActive(false);
           title.SetActive(false);
+          parchment.SetActive(false);
           on = false;
       }
   }
