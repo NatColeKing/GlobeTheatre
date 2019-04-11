@@ -8,7 +8,6 @@
       public GameObject title;
       public GameObject parchment;
       public GameObject description;
-      // public Transform player;
 
       protected Transform obj;
       protected bool on;
