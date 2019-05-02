@@ -39641,6 +39641,7 @@ GameObject:
   - component: {fileID: 676190806}
   - component: {fileID: 676190805}
   - component: {fileID: 676190801}
+  - component: {fileID: 676190804}
   m_Layer: 0
   m_Name: LeftControllerScriptAlias
   m_TagString: Untagged
@@ -39770,6 +39771,34 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
+--- !u!114 &676190804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 676190799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec6736498a33bb40a7b0d79fc8cdd2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1535655822}
+  quickSelect: 2
+  triggerButtonEvents: 1
+  gripButtonEvents: 1
+  touchpadButtonEvents: 1
+  buttonOneButtonEvents: 1
+  buttonTwoButtonEvents: 1
+  startMenuButtonEvents: 1
+  triggerAxisEvents: 1
+  gripAxisEvents: 1
+  touchpadAxisEvents: 1
+  touchpadTwoAxisEvents: 1
+  triggerSenseAxisEvents: 1
+  touchpadSenseAxisEvents: 1
+  middleFingerSenseAxisEvents: 1
+  ringFingerSenseAxisEvents: 1
+  pinkyFingerSenseAxisEvents: 1
 --- !u!114 &676190805
 MonoBehaviour:
   m_ObjectHideFlags: 0
