@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 	private GameObject on_t;
-	private GameObject on_p;
 	private GameObject on_d;
 
 	public void TurnOnTitle(GameObject obj_t)
@@ -16,17 +15,6 @@ public class GameManager : MonoBehaviour {
 					on_t.SetActive(false);
 			obj_t.SetActive(true);
 			on_t = obj_t;
-	}
-
-	public void TurnOnParchment(GameObject obj_p)
-	{
-			// Debug.Log("in game manager");
-			// Debug.Log("on = " + on_p);
-			// Debug.Log("obj = " + obj_p);
-			if(on_p != null)
-					on_p.SetActive(false);
-			obj_p.SetActive(true);
-			on_p = obj_p;
 	}
 
 	public void TurnOnDescription(GameObject obj_d)

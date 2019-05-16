@@ -6,7 +6,6 @@
     {
       public VRTK_InteractableObject linkedObject;
       public GameObject title;
-      public GameObject parchment;
       public GameObject description;
 
       protected Transform obj;
@@ -15,7 +14,6 @@
       {
           description.SetActive(false);
           title.SetActive(false);
-          parchment.SetActive(false);
           linkedObject = (linkedObject == null ? GetComponent<VRTK_InteractableObject>() : linkedObject);
 
           if (linkedObject != null)
@@ -44,18 +42,15 @@
       protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
       {
           GameObject.Find("Game Manager").GetComponent<GameManager>().TurnOnTitle(title);
-          GameObject.Find("Game Manager").GetComponent<GameManager>().TurnOnParchment(parchment);
           GameObject.Find("Game Manager").GetComponent<GameManager>().TurnOnDescription(description);
           description.SetActive(true);
           title.SetActive(true);
-          parchment.SetActive(true);
       }
 
       protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)
       {
           description.SetActive(false);
           title.SetActive(false);
-          parchment.SetActive(false);
       }
   }
 }
