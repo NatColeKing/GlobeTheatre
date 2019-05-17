@@ -8,7 +8,7 @@ namespace VRTK.Examples
 
     public class RH_Listener : MonoBehaviour
     {
-				bool on_check = true;
+				bool on_check = false;
 				public GameObject menu;
 
         public enum EventQuickSelect

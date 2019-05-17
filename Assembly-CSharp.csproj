@@ -332,6 +332,7 @@
      <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
      <Compile Include="Assets\Scripts\Doors.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Gesture.cs" />
      <Compile Include="Assets\Scripts\InfoBubbles.cs" />
      <Compile Include="Assets\Scripts\RH_Listener.cs" />
      <Compile Include="Assets\Scripts\TitleRotate.cs" />
