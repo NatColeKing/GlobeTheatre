@@ -1,0 +1,4 @@
+*.ress filter=lfs diff=lfs merge=lfs -text
+GlobeTheater_Data/shaderassets0.assets.ress filter=lfs diff=lfs merge=lfs -text
+GlobeTheater_Data/shaderassets0.assets.resS filter=lfs diff=lfs merge=lfs -text
+*.resS filter=lfs diff=lfs merge=lfs -text
